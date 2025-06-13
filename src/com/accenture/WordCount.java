@@ -3,22 +3,22 @@ package com.accenture;
 public class WordCount {
 
     public static void main(String[] args) {
-    // String s = " Pankaj  patil * | patil   pankaj   sdd ";
-    // String s = "Hello";
-    //  String s = "   | * & ^   ";
-    //String s = "Java|Python*C++";
-    //    String s = "Test ";
-    String s = "java123 python3 go!";
+        String s = " Pankaj  patil * | patil   pankaj   sdd ";
+        boolean inWord = false;
+        int count = 0;
 
-    char[] newString = s.toLowerCase().toCharArray();
-    int count=0;
-    for(int i=0; i<newString.length-1; i++){
-
-        if(newString[i]>='a'&&newString[i]<='z' && !(newString[i+1]>='a'&&newString[i+1]<='z')){
-            count++;
+        for (char c : s.toCharArray()) {
+            if (c>='a'&&c<='z' || c>='A'&&c<='Z') {
+                if (!inWord) {
+                    count++;
+                    inWord = true;
+                }
+            } else {
+                inWord = false;
+            }
         }
+
+        System.out.println(count);
     }
 
-    System.out.println(count);
-}
 }
