@@ -1,8 +1,5 @@
-package streamapi;
-import java.io.*;
-import java.time.Year;
+package com.streamapi;
 import java.util.*;
-import java.util.stream.Collectors;
 
 
 // creation of ThreadState class

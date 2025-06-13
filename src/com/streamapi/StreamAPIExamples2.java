@@ -1,13 +1,8 @@
-package streamapi;
+package com.streamapi;
 
-import java.nio.file.DirectoryStream.Filter;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.OptionalDouble;
 import java.util.stream.Collectors;
-
-import org.w3c.dom.ls.LSInput;
 
 public class StreamAPIExamples2{
 public static void main(String[] args) {
