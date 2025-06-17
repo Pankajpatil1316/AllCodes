@@ -23,7 +23,6 @@ public class StreamExample3 {
 
         List<String> employees = Arrays.asList("Ankit", "Ravi", "Amit", "Neha", "Alok", "Ramesh");
         char target = 'A';
-
         Map<Boolean, List<String>> map = employees.stream().collect(Collectors.partitioningBy(name -> name.startsWith(String.valueOf(target))));
         System.out.println();System.out.println(map);
     }
