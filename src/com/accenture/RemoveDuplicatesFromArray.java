@@ -20,5 +20,6 @@ public class RemoveDuplicatesFromArray {
         for(int i=0; i<j; i++){
             System.out.print(" " + arr[i] );
         }
+
     }
 }
