@@ -7,9 +7,10 @@ public class ExecutorServiceExample {
 
     public static void main(String[] args) {
 
-        ExecutorService service = Executors.newFixedThreadPool(10);
-
-        for(int i=0; i<10; i++){
+ //       ExecutorService service = Executors.newFixedThreadPool(10);
+           ExecutorService service = Executors.newCachedThreadPool();
+ //       ExecutorService service = Executors.newSingleThreadExecutor();
+        for(int i=0; i<20; i++){
 
             int taskNumber =i;
 
