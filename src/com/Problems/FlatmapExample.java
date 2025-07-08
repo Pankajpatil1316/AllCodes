@@ -1,4 +1,4 @@
-package streamapi;
+package com.Problems;
 
 import java.util.Arrays;
 import java.util.List;

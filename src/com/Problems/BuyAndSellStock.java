@@ -19,8 +19,8 @@ public class BuyAndSellStock {
    
 	public static void main(String[] args) {
 		
-//		int arr[] = {7,1,5,3,6,4};
-		int arr[] = {1,2};
+		int arr[] = {7,1,5,3,6,4};
+	//	int arr[] = {1,2};
 		
 		maxProfit(arr);
 	}
@@ -35,7 +35,7 @@ public class BuyAndSellStock {
 			min_price = Math.min(min_price, price);
 			max_profit = Math.max(max_profit, price-min_price);
 		}
-		
+		System.out.println(max_profit);
 		return max_profit;
     }
 	

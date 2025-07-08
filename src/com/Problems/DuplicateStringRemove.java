@@ -33,7 +33,7 @@ public class DuplicateStringRemove {
         }
 
 
-        System.out.println(list);
+       // System.out.println(list);
 
     }
 }
