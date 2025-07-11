@@ -2,7 +2,7 @@ package com.designPatterns;
 
 public class EagerSingletonDesignPattern {
 
-    private static EagerSingletonDesignPattern instance = new EagerSingletonDesignPattern();
+    private static final EagerSingletonDesignPattern instance = new EagerSingletonDesignPattern();
 
     private EagerSingletonDesignPattern(){
 
